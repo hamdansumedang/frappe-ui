@@ -1,7 +1,7 @@
 import preset from './src/tailwind/preset'
 
 export default {
-  presets: [preset],
+  presets: [ require('frappe-ui/src/utils/tailwind.config') ],
   content: [
     './index.html',
     './App.vue',
