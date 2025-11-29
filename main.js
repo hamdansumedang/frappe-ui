@@ -1,5 +1,8 @@
 import { createApp } from 'vue'
-import './src/style.css'
+import { FrappeUI } from 'frappe-ui'
 import App from './App.vue'
+import './index.css'
 
-createApp(App).mount('#app')
+let app = createApp(App)
+app.use(FrappeUI)
+app.mount('#app')
